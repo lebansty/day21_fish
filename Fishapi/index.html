@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <style>
+    #test {
+      padding-top: 100px;
+    }
+
+    #cardStyle {
+      width: inherit;
+      min-height: 100%;
+      top: 100px
+    }
+
+    #select {
+      width: 350px;
+      float: right;
+      padding-right: 50px;
+      padding-top: 25px;
+    }
+
+    img {
+      max-height: 50vh;
+      max-width: 50vh;
+    }
+
+    .btn {
+      margin: 10px;
+    }
+    nav{
+      background-color: cornflowerblue;
+      height: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+      font-weight: 800;
+      text-shadow: 1px 1px;
+    }
+    .btn{
+      background-color: cornflowerblue;
+      border: 1px solid cornflowerblue;
+    }
+    img{
+      border: 2px solid black;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    Fish
+  </nav>
+  <div id="select">
+    <select class="form-select" id="selc" aria-label="Default select example">
+
+
+    </select>
+    <button class="btn btn-primary mt-2" onclick="foo()" type="submit">Go</button>
+  </div>
+  <div class="container" id="test">
+    <div class="row">
+      <div class="col-6">
+        <div id="img">
+
+        </div>
+
+      </div>
+      
+      <div class="col-6 mt-3 px-3">
+        <div class="col-6">
+          <h5 class="title" id="fishName">Crimpson Jobfish</h5>
+          <div id="sciName"></div>
+         
+            <div id="avai">
+      
+            </div>
+          
+        </div>
+        
+      </div>
+      <div class="row mt-2">
+       
+          <div class="col-12 " id="test2">
+            <div id="biology">
+
+            </div>
+      
+          </div>
+        
+      </div>
+    </div>
+   
+    
+<div id="modal1">
+ 
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Health Benifits</h5>
+          
+        </div>
+        <div class="modal-body" id="helBen">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal2">
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModal1">Population Status</h5>
+          
+        </div>
+        <div class="modal-body" id="helBen2">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <button class="btn btn-primary" onclick="modal1()" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Health Benifits</button>
+    <button class="btn btn-primary" onclick="modal2()" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal2">Population Status</button>
+    
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
